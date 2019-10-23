@@ -3,7 +3,7 @@ if [ "$USER" = "root" ]; then CARETCOLOR="red"; else CARETCOLOR="magenta"; fi
 local return_code="%(?..%{$fg_bold[red]%}:( %?%{$reset_color%})"
 
 PROMPT='
-%{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg[yellow]%}@%{$reset_color%}%{$fg_bold[yellow]%}%M%{$reset_color%}:%{${fg_bold[green]}%}%~%{$reset_color%}$(git_prompt_info)$(svn_prompt_info)
+%{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg[yellow]%}@%{$reset_color%}%{$fg_bold[yellow]%}%M($(hostname -i))%{$reset_color%}:%{${fg_bold[green]}%}%~%{$reset_color%}$(git_prompt_info)$(svn_prompt_info)
 %{${fg[$CARETCOLOR]}%}%# %{${reset_color}%}'
 
 RPS1='${return_code} %D - %*'"$RPS1"

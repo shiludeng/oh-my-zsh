@@ -107,3 +107,4 @@ export PATH
 #--pad-header --unpad-paren --pad-oper --max-code-length=100 --formatted --align-pointer=type \
 #--align-reference=type -Y"
 #alias eagle.py="eagle.py -f"
+alias httpfileserver="python -m SimpleHTTPServer"
